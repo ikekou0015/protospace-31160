@@ -8,11 +8,11 @@
        </div>
      
     <%# // ログインしているときは上記を表示する %>
+    <% else %>
     
     <div class="card__wrapper">
         <%= render partial: "prototype", collection: @prototype  %>
       <%# 投稿機能実装後、部分テンプレートでプロトタイプ投稿一覧を表示する %>
-    <% else %>
     </div>
   <% end %>
   </div>
